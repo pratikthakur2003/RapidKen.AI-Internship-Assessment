@@ -1,0 +1,56 @@
+<!-- registration.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Registration</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">PratikCompany</div>
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search by Name" />
+      </div>
+      <div class="hamburger-menu" onclick="toggleNav()">&#9776;</div>
+      <nav id="navMenu">
+        <ul>
+          <li><a href="index.html">Employee Registration</a></li>
+          <li><a href="listing.html">Employee Listing</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="form-container">
+        <h2>Register Employee</h2>
+        <form id="employee-form">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required />
+          </div>
+          <div class="form-group">
+            <label for="position">Position:</label>
+            <input type="text" id="position" required />
+          </div>
+          <div class="form-group">
+            <label for="about">About:</label>
+            <textarea id="about" required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="joining-date">Joining Date:</label>
+            <input type="date" id="joining-date" required />
+          </div>
+          <span><button type="submit" class="btn">Register</button></span>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Pratik Thakur - All rights reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
